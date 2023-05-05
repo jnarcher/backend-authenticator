@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authenticator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+      <h1>Login</h1>
+      <form onsubmit="handleLoginSubmit()" id="login-form">
+        <div class="username-container">
+          <label for="username">Username</label>
+          <input id="username" type="text">
+        </div>
+        <div class="password-container">
+          <label for="password">Password</label>
+          <input id="password" type="password">
+        </div>
+        <button>Login</button>
+      </form>
+      <div id="login-status"></div>
+    </div>
+
+    <div class="sign-up-container">
+      <h1>Sign Up</h1>
+      <form onsubmit="handleSignupSubmit()" id="login-form">
+        <div class="username-container">
+          <label for="sign-up-username">Username</label>
+          <input id="sign-up-username" type="text">
+        </div>
+        <div class="password-container">
+          <label for="sign-up-password">Password</label>
+          <input id="sign-up-password" type="password">
+        </div>
+        <button>sign Up</button>
+      </form>
+      <div id="sign-up-status"></div>
+    </div>
+
+</body>
+<script src="./main.js"></script>
+</html>
